@@ -1,0 +1,4 @@
+key1=blue
+key2 = yellow
+key3= 00ff00
+key4 =value4
