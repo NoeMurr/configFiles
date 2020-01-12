@@ -232,17 +232,12 @@ gaps outer 4
 #	}
 #}
 
-# allways empty ws for viewing the desktop
-set $empty_mode Empty mode
-mode "$empty_mode" {
-	bindsym $mod+c workspace back_and_forth; mode "default"
-} 
-
 # executing and setting conky
-#bindsym $mod+c exec --no-startup-id "~/.config/i3/scripts/toggle-conky.sh ~/.config/i3/conky.conf"
-bindsym $mod+c workspace "empty"; mode "$empty_mode"
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
+
+# setting the monitor position for the double monitor when with nvidia
+exec_always --no-startup-id bash -c "~/.config/i3/scripts/monitors.sh"
 
 # setting the background if possible 
 exec_always --no-startup-id bash -c  "~/.config/i3/scripts/set-background.sh"
