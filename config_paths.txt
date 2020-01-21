@@ -29,3 +29,4 @@
 ~/.config/i3/scripts/toggle-conky.sh
 ~/.config/i3/scripts/set-background.sh
 ~/.config/i3/scripts/toggle-conky.sh
+~/.config/i3/scripts/monitors.sh
