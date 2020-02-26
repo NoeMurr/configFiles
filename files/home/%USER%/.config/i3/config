@@ -197,12 +197,13 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $sys System (e) Exit, (l) Lock screen, (o) power Off, (r) Reboot
+set $sys System (e) Exit, (l) Lock screen, (s) suspend, (o) power Off, (r) Reboot
 mode "$sys" {
-	bindsym l exec i3lock-fancy; mode "default"
-	bindsym e exec i3-msg exit; mode "default"
-	bindsym o exec bash -c "shutdown now"; mode "default"
-	bindsym r exec bash -c "reboot"; mode "default"
+	bindsym l exec --no-startup-id i3lock-fancy; mode "default"
+	bindsym e exec --no-startup-id  i3-msg exit; mode "default"
+	bindsym s exec --no-startup-id bash -c "systemctl suspend -i"; mode "default"
+	bindsym o exec --no-startup-id bash -c "shutdown now"; mode "default"
+	bindsym r exec --no-startup-id bash -c "reboot"; mode "default"
 
 	# back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
