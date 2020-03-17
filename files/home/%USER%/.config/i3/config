@@ -251,3 +251,6 @@ exec --no-startup-id compton -b
 
 # changing to ws 1
 exec --no-startup-id i3-msg workspace 1
+
+# starting the libinput-gesture 
+exec --no-startup-id libinput-gestures
