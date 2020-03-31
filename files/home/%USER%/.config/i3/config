@@ -149,6 +149,18 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
+# set workspace outputs
+workspace $ws1 output primary
+workspace $ws2 output primary
+workspace $ws3 output primary
+workspace $ws4 output primary
+workspace $ws5 output primary
+workspace $ws6 output HDMI-0 primary
+workspace $ws7 output HDMI-0 primary
+workspace $ws8 output HDMI-0 primary
+workspace $ws9 output HDMI-0 primary
+workspace $ws10 output HDMI-0 primary
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
