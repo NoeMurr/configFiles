@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-from os import path, makedirs, errno, sep, walk
+from os import path, makedirs, sep, walk
+import errno
 from getpass import getuser
 from shutil import copyfile
 

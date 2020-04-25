@@ -50,7 +50,7 @@ bindsym $mod+Next exec --no-startup-id playerctl next
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -227,10 +227,10 @@ bindsym $mod+Shift+s mode "$sys"
 bindsym $mod+w exec --no-startup-id firefox
 
 # setting the i3-gaps gaps
-for_window [class="^.*"] border pixel 2
-smart_gaps inverse_outer
+for_window [class="^.*"] border pixel 0 
 gaps inner 8
-gaps outer 4
+gaps outer 2
+smart_gaps inverse_outer
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -259,7 +259,7 @@ exec_always --no-startup-id bash -c  "~/.config/i3/scripts/set-background.sh"
 exec_always --no-startup-id bash -c "~/.config/polybar/launch.sh"
 
 # starting compton as compositor for this account 
-exec --no-startup-id compton -b 
+exec --no-startup-id bash -c "~/.config/i3/scripts/compton.sh" 
 
 # changing to ws 1
 exec --no-startup-id i3-msg workspace 1

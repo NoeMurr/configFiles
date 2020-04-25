@@ -31,3 +31,4 @@
 ~/.config/i3/scripts/toggle-conky.sh
 ~/.config/i3/scripts/monitors.sh
 ~/.config/libinput-gestures.conf
+~/.config/dunst/dunstrc
