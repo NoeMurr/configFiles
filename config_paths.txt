@@ -32,3 +32,4 @@
 ~/.config/i3/scripts/monitors.sh
 ~/.config/libinput-gestures.conf
 ~/.config/dunst/dunstrc
+/home/noemurr/.config/compton.conf
