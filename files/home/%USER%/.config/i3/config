@@ -261,8 +261,5 @@ exec_always --no-startup-id bash -c "~/.config/polybar/launch.sh"
 # starting compton as compositor for this account 
 exec --no-startup-id bash -c "~/.config/i3/scripts/compton.sh" 
 
-# changing to ws 1
-exec --no-startup-id i3-msg workspace 1
-
 # starting the libinput-gesture 
 exec --no-startup-id libinput-gestures
