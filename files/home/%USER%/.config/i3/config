@@ -54,6 +54,10 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 20 # decrease screen brightness
 
+# trackpad control
+#bindsym XF86TouchpadToggle exec --no-startup-id bash -c "~/.config/i3/scripts/toggle-touchpad.sh"
+bindsym XF86TouchpadToggle exec --no-startup-id bash -c "notify-send \"hello\""
+
 # audioplayer
 bindsym $mod+p exec --no-startup-id playerctl play-pause
 bindsym $mod+Prior exec --no-startup-id playerctl previous
