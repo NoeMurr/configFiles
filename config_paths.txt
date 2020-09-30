@@ -33,3 +33,4 @@
 ~/.config/libinput-gestures.conf
 ~/.config/dunst/dunstrc
 ~/.config/i3/scripts/compton.sh
+~/.local/share/file-manager/actions/set-as-i3-bg.desktop

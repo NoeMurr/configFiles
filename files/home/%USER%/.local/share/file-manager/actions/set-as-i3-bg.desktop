@@ -1,0 +1,23 @@
+[Desktop Entry]
+Type=Action
+ToolbarLabel[en_US]=Set As I3 Wallpaper
+ToolbarLabel[en]=Set As I3 Wallpaper
+ToolbarLabel[C]=Set As I3 Wallpaper
+Name[en_US]=Set As I3 Wallpaper
+Name[en]=Set As I3 Wallpaper
+Name[C]=Set As I3 Wallpaper
+Profiles=profile-zero;
+
+Tooltip[en_US]=Set as background during i3 session
+Tooltip[en]=Set as background during i3 session
+Tooltip[C]=Set as background during i3 session
+TargetLocation=true
+TargetToolbar=true
+
+[X-Action-Profile profile-zero]
+Folders=*;
+Exec=/home/noemurr/.config/i3/scripts/set-background.sh %f
+Name[en_US]=Set As i3 Wallpaper
+Name[en]=Set As i3 Wallpaper
+Name[C]=Set As i3 Wallpaper
+MimeTypes=image/*;

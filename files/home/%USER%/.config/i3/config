@@ -122,7 +122,7 @@ bindsym $mod+o split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking 
@@ -242,6 +242,7 @@ mode "$sys" {
 
 bindsym $mod+Shift+s mode "$sys"
 bindsym $mod+w exec --no-startup-id firefox
+bindsym $mod+f exec --no-startup-id nautilus
 
 # setting the i3-gaps gaps
 for_window [class="^.*"] border pixel 0 
@@ -267,3 +268,5 @@ smart_gaps inverse_outer
 # executing and setting conky
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
+
+exec --no-startup-id bash -c "i3-msg '[workspace=$1]' move workspace to output primary"
