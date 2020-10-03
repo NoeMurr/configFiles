@@ -31,14 +31,14 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock-fancy --nofork
 exec --no-startup-id nm-applet
 
 # setting the monitor position for the double monitor when with nvidia
-exec_always --no-startup-id bash -c "~/.config/i3/scripts/monitors.sh"
+#exec_always --no-startup-id bash -c "~/.config/i3/scripts/monitors.sh"
 
 # setting the background if possible 
 exec_always --no-startup-id bash -c  "~/.config/i3/scripts/set-background.sh"
 exec_always --no-startup-id bash -c "~/.config/polybar/launch.sh"
 
 # starting compton as compositor for this account 
-exec --no-startup-id bash -c "~/.config/i3/scripts/compton.sh" 
+#exec --no-startup-id bash -c "~/.config/i3/scripts/compton.sh" 
 
 # starting the libinput-gesture 
 exec --no-startup-id libinput-gestures
@@ -268,5 +268,3 @@ smart_gaps inverse_outer
 # executing and setting conky
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
-
-exec --no-startup-id bash -c "i3-msg '[workspace=$1]' move workspace to output primary"
